@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: QUESTION-SERVICE
+    name: JOB-SERVICE
   config:
     import: "optional:configserver:http//localhost:8084"
 
