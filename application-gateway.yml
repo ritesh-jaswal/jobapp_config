@@ -8,15 +8,20 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: QUIZ-SERVICE
-          uri: lb://QUIZ-SERVICE
+        - id: COMPANY-SERVICE
+          uri: lb://COMPANY-SERVICE
           predicates:
-            - Path=/quiz/**
+            - Path=/company/**
 
-        - id: QUESTION-SERVICE
-          uri: lb://QUESTION-SERVICE
+        - id: JOB-SERVICE
+          uri: lb://JOB-SERVICE
           predicates:
-            - Path=/question/**
+            - Path=/job/**
+
+        - id: REVIEW-SERVICE
+          uri: lb://REVIEW-SERVICE
+          predicates:
+            - Path=/review/**    
 
 eureka:
   client:
