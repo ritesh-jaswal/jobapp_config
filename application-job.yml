@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: JOB-SERVICE
-  config:
-    import: "optional:configserver:http//localhost:8084"
 
   h2:
     console:
