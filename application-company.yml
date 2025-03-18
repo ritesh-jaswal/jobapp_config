@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: QUIZ-SERVICE
+    name: COMPANY-SERVICE
 
   h2:
     console:
